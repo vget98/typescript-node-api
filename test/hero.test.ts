@@ -7,6 +7,12 @@ import app from '../src/App';
 chai.use(chaiHttp);
 const expect = chai.expect;
 
+/*
+  the endpoint is at /api/v1/heroes
+  it returns a JSON array of hero objects
+  we can find Wolverine, and his object contains all the keys that we expect
+*/
+
 describe('GET api/v1/heroes', () => {
 
   it('responds with JSON array', () => {
